@@ -1,0 +1,179 @@
+/*      Spirax och Poiret One Font
+font-family: "Poiret One", sans-serif;
+font-family: "Spirax", sans-serif;
+*/
+
+body {
+    margin: 0;
+    color: white;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+header {
+    font-family: "Spirax", sans-serif;
+    position: fixed;
+    background-color: rgba(70, 15, 15, 0.5);
+    width: 100%;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0.5rem 00rem;
+    /*
+    max-width:100%;
+    max-width: 75%;
+*/
+    max-width: 100%;
+    text-align: center;
+}
+
+header nav a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    appearance: none;
+    border: none;
+    font-size: 3rem;
+    font-weight: 500;
+    /*
+    border-radius: 10rem;
+    padding: 1rem 3rem;
+    margin-bottom: 1.5rem;
+    margin-top: auto;
+*/
+    margin: 0 1rem;
+
+    text-align: center;
+}
+
+main section.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+main section.page div.page-content {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+
+    max-width: 1000px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section.section-hot {
+    background: url("assets/hot.jpg") no-repeat center center;
+    background-size: cover;
+    /*
+    height:max-content;
+*/
+}
+
+main section.section-juicy {
+    background: url("assets/juicy.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+main section.section-cozy {
+    background: url("assets/cozy.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+
+main section.page div.page-content h1 {
+    color: darkred;
+    font-size: 7.5rem;
+    font-family: "Spirax", sans-serif;
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+}
+
+main section.page div.page-content h2 {
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0rem;
+    max-width: 700px;
+    min-width: 45rem;
+    color: white;
+    background-color: rgba(139, 0, 0, 0.75);
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+main section.page div.page-content h2.boxl {
+    align-self: start;
+}
+
+main section.page div.page-content h2.boxr {
+    align-self: end;
+}
+
+main section.page div.page-content table.menu {
+    width: 90%;
+    font-size: 1.5rem;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 1rem 3rem;
+    margin-bottom: 4rem;
+}
+
+.page table.menu td.col-left {
+    text-align: start;
+}
+
+.page table.menu td.col-right {
+    text-align: end;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    main section.page div.page-content h1 {
+        font-size: 5rem;
+    }
+
+    main section.page div.page-content h2 {
+        max-width: 500px;
+        min-width: 15rem;
+        font-weight: 300;
+        font-size: 1rem;
+        word-wrap: break-word;
+        margin: 0rem 1rem 1rem;
+        padding: 1rem;
+    }
+
+    main section.page div.page-content h2.boxl {
+        align-self: center;
+        /*     max-width: 80%;
+     */
+    }
+    main section.page div.page-content h2.boxr {
+        display: none;
+    }
+
+    main section.page div.page-content table.menu {
+        font-size: 1rem;
+        padding: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    header nav a {
+        font-size: 2rem;
+    }
+}
